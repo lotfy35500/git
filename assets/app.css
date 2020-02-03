@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs [type="radio"] {
+  display: none;
+}
+.tabs > div {
+  order: 1;
+  width: 100%;
+  border-top: solid 1 px #000; 
+}
+.tabs [type="radio"] + label {
+  opacity: .7;
+  display: inline-block;
+  padding: 5px 10px;
+  border: solid 1px #000;
+  border-bottom-color: transparent;
+  border-radius: 3px;
+  background-color: aliceblue;
+  transition: all .3s;
+}
+.tabs [type="radio"]:checked + label {
+  opacity: 1;
+  padding: 6px 12px;
+  position: relative;
+}
+.tabs [type="radio"]:not(:checked) + label + div {
+display: none;
+}
+ 
