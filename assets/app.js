@@ -4,6 +4,7 @@ let h1 = document.querySelector('h1');
 if(h1) {
   let text = h1.innerHTML;
   animateText(h1, text);
+  console.log('lolo')
 }
 
 function animateText(el, text) {
@@ -12,7 +13,7 @@ function animateText(el, text) {
     const lettre = text[i]
     setTimeout(function() {
       el.innerHTML += lettre;
-
+     
     },i*300);
   }
 }
